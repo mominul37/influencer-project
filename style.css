@@ -1,0 +1,173 @@
+.influencer-gear-project{
+    font-family:'Times New Roman', Times, serif;
+    font-size:none;
+    font-weight: 400;
+    font-optical-sizing: auto;
+}
+.display-flex{
+    display: flex;
+}
+/* navbar section */
+.ig-light{
+    display: flex;
+    /* justify-content: space-between; */
+
+}
+.text-gray{
+    color: #424242;
+}
+.brand{
+    font-size:1.5rem;
+    color: #424242;
+    gap: 30px;
+    padding: 0 0 0 30px;
+}
+.navbar{
+    justify-content: space-between; 
+    align-items: center;
+     width: 100%;
+}
+.nav-item{
+    list-style: none;
+    margin:10px;
+}
+
+.nav-link{
+    text-decoration: none;
+}
+.nav-links{
+    display: flex;
+    margin-right: 120px;
+}
+.navbar{
+    max-width: 1440px;
+    margin:0 auto;
+}
+/* journey influencer banner section */
+.banner{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:30px;
+    width: 100%;
+}
+.banner-tittle{
+    font-size: 3.5rem;
+}
+.banner-content{
+    padding: 0 0 0 30px;
+}
+.btn1{
+    border-radius: 8px;
+    padding:8px 10px;
+   background-color:#E02C6D;
+   color: white;
+   font-size: 1.25rem;
+   border: none;
+}
+.banner-img{
+    background-image: url(/images/Circle\ design.svg);
+    padding: 0 20 0 0;
+}
+/* website section */
+.web-img{
+     border: 1px solid red; 
+    display: grid;
+    grid-template-columns:repeat(6,1fr) ;
+    margin-top: 40px;
+    /* padding: 10px 0 10 0; */
+    /* width: 200px;
+    height: 30px;
+    box-shadow: 5px 5px rgba(white); */
+}
+.web-tittle{
+    width: 200px;
+    height: 200px;
+    box-shadow: 100px 30px 15px ghostwhite ;
+
+}
+/* influencer card section */
+.cards{
+    width:250px;
+    margin: 10px;
+    box-sizing:border-box ;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 1px 2px 4px ghostwhite ;
+}
+.card-heading{
+    text-align: center;
+}
+.img-style{
+    width: 100%;
+}
+
+.card-tittle{
+    font-size: 2.5rem;
+    align-items: center;
+    font-weight: 100;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* grid-template-rows: repeat(3,1fr); */
+
+
+}
+.btn-container{
+     text-align:right;
+}    
+.btn2{
+    border-radius: 5px;
+    background-color: #E02C6D;
+    color: white;
+}
+/* feature product */
+.product{
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+}
+.img-product{
+    width: 100%;
+}
+.feature-tittle{
+    /* text-align: center; */
+    width: 100%;
+}
+.feature-descript{
+    font-size: 10.0rem;
+}
+.btn3{
+    color:white;
+    background-color: #E02C6D;
+    border: 10px;
+    padding: 6px 8px;
+}
+
+/* resposive media quary */
+@media screen and (max-width:576) {
+    .navbar,.nav-link,.product{
+        flex-direction: column;
+    }
+    .web-img,.banner-img{
+        grid-template-columns: 1fr;
+    }
+    .cards{
+        grid-template-columns:2,1fr;
+        justify-items: center;
+    }
+    
+}
+/* medium device */
+@media screen and (max-width:576) and (min-width:992) {
+    .wed-img{
+        flex-direction: column;
+    }
+    .cards{
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    
+}
